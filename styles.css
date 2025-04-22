@@ -84,11 +84,6 @@ body.modo-oscuro .invalid-feedback {
 }
 
 /* Estilos para el modo de alto contraste */
-/* styles.css */
-
-/* ... otros estilos ... */
-
-/* Estilos para el modo de alto contraste */
 body.modo-alto-contraste {
     background-color: #000000; /* Negro puro */
     color: #FFFFFF; /* Blanco puro */
@@ -144,8 +139,8 @@ body.modo-alto-contraste .invalid-feedback {
 .theme-buttons button {
     padding: 8px 15px;
     margin: 0 5px;
-    border: 1px solid #ced4da; /* Añadimos un borde similar a los inputs */
-    border-radius: 0.25rem; /* Añadimos el mismo radio de borde que los inputs */
+    border: 1px solid #ced4da; 
+    border-radius: 0.25rem; 
     cursor: pointer;
     font-size: 0.9em;
 }
