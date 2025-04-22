@@ -1,0 +1,168 @@
+/* Estilos generales (modo normal - base de Bootstrap) */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #212529; /* Texto oscuro */
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+.invalid-feedback {
+    font-size: 0.8em;
+    color: #dc3545;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+body {
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #212529; /* Texto oscuro */
+}
+
+.form-control {
+    background-color: #fff;
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem; /* Añadimos el radio de borde de Bootstrap */
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilos para el modo oscuro */
+body.modo-oscuro {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+}
+
+body.modo-oscuro h2 {
+    color: #fff;
+}
+
+body.modo-oscuro .form-control {
+    background-color: #495057;
+    color: #fff;
+    border-color: #6c757d;
+}
+
+body.modo-oscuro .form-control:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+body.modo-oscuro .form-label {
+    color: #fff;
+}
+
+body.modo-oscuro .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+body.modo-oscuro .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+body.modo-oscuro .invalid-feedback {
+    color: #f8d7da;
+}
+
+/* Estilos para el modo de alto contraste */
+/* styles.css */
+
+/* ... otros estilos ... */
+
+/* Estilos para el modo de alto contraste */
+body.modo-alto-contraste {
+    background-color: #000000; /* Negro puro */
+    color: #FFFFFF; /* Blanco puro */
+}
+
+body.modo-alto-contraste h2 {
+    color: #FFFF00; /* Amarillo fuerte */
+}
+
+body.modo-alto-contraste .form-control {
+    background-color: #333; /* Un gris oscuro para contraste */
+    color: #FFFFFF; /* Blanco puro */
+    border-color: #00FFFF; /* Cian brillante */
+}
+
+body.modo-alto-contraste .form-control:focus {
+    border-color: #FFFF00; /* Amarillo fuerte */
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.25); /* Destello amarillo al enfocar */
+}
+
+body.modo-alto-contraste .form-label {
+    color: #FFFFFF; /* Blanco puro */
+}
+
+body.modo-alto-contraste .btn-primary {
+    background-color: #00FFFF; /* Cian brillante */
+    border-color: #00FFFF; /* Cian brillante */
+    color: #000000; /* Negro puro */
+}
+
+body.modo-alto-contraste .btn-primary:hover {
+    background-color: #00CED1; /* Un tono más oscuro de cian al pasar el ratón */
+    border-color: #00CED1;
+}
+
+body.modo-alto-contraste .invalid-feedback {
+    color: #FFFF00; /* Amarillo fuerte para alertas */
+}
+
+/* Estilos para los botones de cambio de tema */
+.theme-buttons button.high-contrast-theme {
+    background-color: #FFFF00; /* Amarillo fuerte */
+    color: #000000; /* Negro puro */
+    border-color: #ccac00; /* Un tono más oscuro de amarillo para el borde */
+}
+
+/* Estilos para los botones de cambio de tema */
+.theme-buttons {
+    margin-top: 20px; /* Añadimos un margen superior para separarlos del botón de registro */
+    text-align: center;
+}
+
+.theme-buttons button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: 1px solid #ced4da; /* Añadimos un borde similar a los inputs */
+    border-radius: 0.25rem; /* Añadimos el mismo radio de borde que los inputs */
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.theme-buttons button.normal-theme {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.theme-buttons button.dark-theme {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #495057; /* Un borde más oscuro para el tema oscuro */
+}
+
+.theme-buttons button.high-contrast-theme {
+    background-color: #FFFF00;
+    color: #000000;
+    border-color: #ccac00; /* Un borde más oscuro para el tema de alto contraste */
+}
