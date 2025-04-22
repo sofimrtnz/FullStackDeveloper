@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-8 col-12">
+                <h2>Registro de Usuario</h2>
+                <form id="registroForm" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre *</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required pattern="[^0-9]*">
+                        <div class="invalid-feedback">Por favor, ingrese su nombre (sin números).</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido" class="form-label">Apellido *</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" required pattern="[^0-9]*">
+                        <div class="invalid-feedback">Por favor, ingrese su apellido (sin números).</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo Electrónico *</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Por favor, ingrese un correo electrónico válido.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento *</label>
+                        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required max="2024-12-31">
+                        <div class="invalid-feedback">Por favor, seleccione una fecha de nacimiento anterior al 31 de diciembre de 2024.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="paisResidencia" class="form-label">País de Residencia *</label>
+                        <select class="form-control" id="paisResidencia" name="paisResidencia" required>
+                            <option value="">Seleccionar país</option>
+                            <option value="ar">Argentina</option>
+                            <option value="bo">Brasil</option>
+                            <option value="cl">Chile</option>
+                            </select>
+                        <div class="invalid-feedback">Por favor, seleccione su país de residencia.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                    <div class="theme-buttons">
+                        <button type="button" class="normal-theme">Normal</button>
+                        <button type="button" class="dark-theme">Oscuro</button>
+                        <button type="button" class="high-contrast-theme">Alto Contraste</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQMuDBUH0anuTxhc6Xn4dby9gi9FpF0FmUbXJ8JiZ8fdlnzInt7TLwi69gyNcz" crossorigin="anonymous"></script>
+</body>
+</html>
